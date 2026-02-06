@@ -1,0 +1,16 @@
+  * {
+      /*seletor global*/
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: 15px;
+  }
+
+  #teste {
+      /*seletor por ID*/
+      font-family: 'Times New Roman', Times, serif;
+      color: blue;
+      font-size: 20px;
+  }
+
+  .negrito { /*diferentedo ID a classe tem que informar um "." */
+      font-weight: bold;
+  }
