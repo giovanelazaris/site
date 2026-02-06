@@ -52,10 +52,31 @@
         <section id="contato">
             <h2>Contato</h2>
             <p>Tem um projeto em mente! Entre em contato</p>
-            <address>
-                Email: <a href="mailto:giovanelazaris@hotmail.com">giovanelazaris@hotmail.com</a><br>
-                Telefone: <a href="tel: +55 (49) 9 8812-0341">+55 (49) 9 8812-0341</a>
-            </address>
+            <form action="">
+                <label for="nome">Nome: </label>
+                <input type="text" name="nome" required><br><br> <!-- todo campo que tiver o atributo required é obrigatorio o preencimento-->
+
+                <label for="email">Email: </label>
+                <input type="email" name="email" required><br><br>
+
+                <label for="telefone">Telefone: </label>
+                <input type="tel" name="telefone"><br><br>
+
+                <label for="assunto">Assunto: </label>
+                <select name="assunto" id="assunto">
+                    <option value="orcamento">Orçamento</option>
+                    <option value="duvida">Duvida</option>
+                    <option value="outros">Outros</option>
+                </select>
+                <br><br>
+                <label for="mensagem">Mensagem: </label>
+                <textarea name="mensagem" id="mensamge" cols="20" rows="10" required></textarea><br><br>
+
+                <input type="checkbox" name="inscricao" id="inscricao">
+                <label for="inscricao">Deseja receber minha newsletter? Fique por dentro</label><br>
+                <input type="submit" value="Enviar mensagem">
+            </form>
+       
         </section>
     </footer>
 </body>
