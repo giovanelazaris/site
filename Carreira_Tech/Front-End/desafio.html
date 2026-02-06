@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio</title>
+</head>
+
+<body>
+    <header>
+        <h2>Cadastro de Escolaridade</h2>
+    </header>
+
+    <section>
+
+        <form action=""></form>
+        <label for="fnomeCompleto">Nome Completo*: </label><br>
+        <input type="text" name="fnomeCompleto" size="40" maxlength="100" required> <br><br>
+        <label for="femail">E-mail*: </label><br>
+        <input type="email" name="femail" size="40" maxlength="50" required> <br><br>
+        <label for="fidade">Idade*: </label><br>
+        <input type="number" name="fidade" size="5"><br><br>
+        <label for="fassunto">Selecione a matéria que deseja lecionar: </label>
+        <select name="fassunto" id="fassunto">
+            <option value="matematica">Matemática</option>
+            <option value="portugues">Português</option>
+            <option value="ciencias">Ciências</option>
+            <option value="historia">História</option>
+            <option value="geografia">Geografia</option>
+            <option value="artes">Artes</option>
+        </select>
+        <br><br>
+        <label for="fnivelEscolaridade">Selecione o Nível de Escolaridade: </label>
+        <select name="fnivelEscolaridade" id="fnivelEscolaridade">
+            <option value="superiorIncompleto">Superior Incompleto</option>
+            <option value="superiorcompleto">Superior Completo</option>
+            <option value="posgraIncompleto">Pós-Graduação Incompleta</option>
+            <option value="posGraCompleto">Pós-Graduação Completa</option>
+            <option value="mestradoIncompleto">Mestrado Incompleto</option>
+            <option value="mestradCompleto">Mestrado Completo</option>
+            <option value="doutoradoIncompleto">Doutorado Incompleto</option>
+            <option value="doutoradoCompleto">Doutorado Completo</option>
+        </select>
+        <br><br>
+        <label for="fsobreVoce">Sobre você: </label><br>
+        <textarea name="fsobreVoce" id="fsobreVoce" cols="100" rows="20" required></textarea>
+        <br><br>
+        <input type="submit" value="Enviar">
+    </section>
+
+  
+
+</body>
+
+</html>
