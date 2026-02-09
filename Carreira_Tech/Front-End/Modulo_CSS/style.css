@@ -11,6 +11,30 @@
       font-size: 20px;
   }
 
-  .negrito { /*diferentedo ID a classe tem que informar um "." */
+  /*.negrito { /*diferentedo ID a classe tem que informar um "." */
+  /*font-weight: bold;
+  }*/
+
+  p+a {
+      /* todo elemento de link que vier logo em seguida de um elemento p aplicaca-se esta regra */
       font-weight: bold;
+      color: blueviolet;
+  }
+
+  h3~p {
+      /*todos os elementos que vierem depois do elemento informado receberão esta regra*/
+      font-weight: bold;
+      color: brown;
+  }
+
+  p>a {
+      /*todos os elementos que que for filho do elemento paragrafo recebe esta regra*/
+      font-weight: bold;
+      color: goldenrod;
+  }
+
+  div a {
+      /*seletor descendente, todo "a" que for descendente da div recebe esta regra */
+      font-weight: bold;
+      color: aquamarine;
   }
