@@ -1,0 +1,12 @@
+p{
+    text-align: justify;
+}
+.header{
+    background-color: yellow;
+    position: sticky; /*Mantem o menu Fixo no topo do site*/
+    position: -webkit-sticky; /*definir duas propriedades iguais para atender todos os navegadores*/
+    top: 0; /*posicinar o elemento no topo da pagina*/
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 20px;
+}
