@@ -1,0 +1,39 @@
+body{
+    text-align: center;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-column: 1fr 2fr 1fr;
+   
+
+}
+.cabecalho{
+    background-color: azure;
+    padding: 30px;
+    grid-column: 1/ -1;
+}
+.menu{
+    background-color: greenyellow;
+    padding: 30px;
+    grid-column: 1 / -1;
+
+}
+.colunaEsquerda{
+    background-color: lightgreen;
+    padding: 30px;
+
+}
+.conteudo{
+    background-color: aliceblue;
+    padding: 30px;
+}
+.colunaDireita{
+    background-color: lightskyblue;
+    padding: 30px;
+}
+.rodape{
+    background-color: burlywood;
+    padding: 30px;
+    grid-column: 1 / -1;
+}
