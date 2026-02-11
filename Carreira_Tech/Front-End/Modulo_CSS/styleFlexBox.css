@@ -1,3 +1,6 @@
+div{
+    text-align: center;
+}
 .container {
     background-color: lightcoral;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -5,7 +8,12 @@
     display: flex;
     /*flex-direction: column; /* os elementos se alinham em uma coluna*/
     flex-direction: row; /*se nao definir um flex-direction por padrão o CSS assume o row elementos dispostos na horizontal da esquerda pra a direita*/
-    justify-content: flex-end; /*alinhamento dos elementos dentro do container*/
+    /*justify-content: space-evenly; /*Define o alinhamento horizontal. Controla o espaço ao redor ou entre os itens.*/
+    align-items: end; /*Define o alinhamento vertical. Controla como os itens são posicionados dentro do container na vertical */
+    flex-wrap: wrap-reverse; /*serve para controlar se os itens dentro de um contêiner flexível devem se ajustar em uma única linha (padrão nowrap) ou quebrar para múltiplas linhas (usando wrap ou wrap-reverse) quando não há espaço suficiente.*/
+    align-content: center; /*Alinha os conteudos quando tiver quebra de linha - essa funcionalidade só é utilizada quando existe o parametro flex-wrap*/
+    gap: 10px; /*espaçamento entre os itens dentro de um container*/
+
 }
 
 .box {
@@ -17,10 +25,13 @@
 }
 #box1{
     background-color: lightsalmon;
+    flex-grow: 1; /*define a capacidade de um item flexível crescer e ocupar espaço livre dentro de um contêiner*/
 }
 #box2{
     background-color: rgb(112, 115, 143);
+    flex-grow: 1;
 }
 #box3{
     background-color: rgb(187, 174, 61);
+    flex-grow: 1;
 }
