@@ -1,0 +1,26 @@
+.container {
+    background-color: lightcoral;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 10px;
+    display: flex;
+    /*flex-direction: column; /* os elementos se alinham em uma coluna*/
+    flex-direction: row; /*se nao definir um flex-direction por padrão o CSS assume o row elementos dispostos na horizontal da esquerda pra a direita*/
+    justify-content: flex-end; /*alinhamento dos elementos dentro do container*/
+}
+
+.box {
+    height: 50px;
+    width: 50px;
+    border: 3px solid black;
+    border-radius: 3px;
+    padding: 10px;
+}
+#box1{
+    background-color: lightsalmon;
+}
+#box2{
+    background-color: rgb(112, 115, 143);
+}
+#box3{
+    background-color: rgb(187, 174, 61);
+}
