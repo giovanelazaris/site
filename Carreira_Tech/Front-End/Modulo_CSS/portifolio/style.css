@@ -1,0 +1,32 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0; /*Este parametro é para a pagina ocupar toda a tela*/
+}
+header{
+    background-color: rgb(63, 63, 63);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+main{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr)); /*repeat(auto-fit) - ajusta o tamanho das colunas de acordo com o tamanho da tela*/
+    gap: 20px; /*definine o espaçamento entre os elementos do grid*/
+    padding: 20px;
+
+}
+.content {
+    background-color: rgb(201, 196, 196);
+    padding: 20px;
+    border-radius: 4px; /*arredondar a borda*/
+}
+
+footer{
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed; /*ficar fixo*/
+    bottom: 0; /*deixar fixo na posição rodapé*/
+    width: 100%;
+}
