@@ -1,0 +1,31 @@
+function validateForm(){
+    const email = document.getElementById("email").value
+    const telefone = document.getElementById("fone").value
+    const senha = document.getElementById("pass").value
+
+        if (email === '' || telefone === '' || senha === ''){
+        alert('Todos os campos são obrigatórios.')
+        return false // para nao eviar os dados 
+    }
+
+    const fonePatern = /^(?:\(\d{2}\)|\d{2})\s?(?:9\d{4}|[2-8]\d{3})-?\d{4}$/
+    if(!fonePatern.test(telefone)){
+        alert("Por favor insira um numero de telefone valido")
+        return false
+    }
+
+    const emailPatern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
+    if(!emailPatern.test(email)){
+        alert("Por favor insira um email valido")
+        return false
+    }
+
+    return true
+}
+
+document.getElementById("contact-form").addEventListener('submit', function(event){
+    event.preventDefault();
+    if(validateForm()){
+        alert("Enviado!")
+    }
+})
