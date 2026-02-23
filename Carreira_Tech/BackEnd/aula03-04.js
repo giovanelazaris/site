@@ -16,7 +16,7 @@ setTimeout(() => {
 /*setInterval(() => {
     console.log("Alerta")
 }, 3000)*/
-
+console.log("Inicio da execução")
 function buscaDadosServidor(){
     //Codigo que busca dados do Servidor
 
@@ -34,4 +34,23 @@ function buscaDadosServidor(){
     })
 }
 
-buscaDadosServidor().then((mensagem) => console.log(mensagem)).catch((erro)=>console.log(erro))
+/*buscaDadosServidor()
+    .then((mensagem) => {
+        console.log(mensagem)
+    })
+    .catch((erro) => {
+        console.log(erro)
+    })*/
+
+const minhaFuncaoAssincrona = async () => {
+    try{
+        const resultado = await buscaDadosServidor()
+        console.log(resultado)
+    }catch (erro){
+        console.log(erro)
+    }
+}
+
+minhaFuncaoAssincrona()
+
+console.log("final da execução")
