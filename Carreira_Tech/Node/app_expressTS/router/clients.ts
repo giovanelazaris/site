@@ -1,15 +1,21 @@
-import Router = require("express")
+import { Router } from "express";
 import clientsController from "../Controller/clientsController"
 
-const router = Router()
+const router = Router();
 
 router.get('/',clientsController.index)
+router.get('/:id',clientsController.show)
 
-router.get('/sobre',clientsController.sobre)
+router.get('/create',clientsController.create)
+router.post('/create',clientsController.store)
 
-router.get('/contato',clientsController.contato)
+router.get('/edit:id', clientsController.edit)
 
-router.get('/projetos',clientsController.projetos)
+//router.get('/sobre',clientsController.sobre)
+
+//router.get('/contato',clientsController.contato)
+
+//router.get('/projetos',clientsController.projetos)
 
 /*router.get('/sobrenos',(req, res) => {
     res.send("<h1>Sobre Nós<h1>")
